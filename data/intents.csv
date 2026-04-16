@@ -1,0 +1,99 @@
+text,intent
+I forgot my password,password_reset
+How do I reset my password,password_reset
+Can't login to my account,password_reset
+Reset my login password,password_reset
+Password not working,password_reset
+Check my ticket status,ticket_status
+What is my ticket update,ticket_status
+Track my issue status,ticket_status
+Is my issue resolved,ticket_status
+Show my support ticket,ticket_status
+Install VPN,software_help
+How to install software,software_help
+Guide me to install application,software_help
+Installation steps please,software_help
+Software setup help,software_help
+VPN not working,technical_issue
+Internet not connecting,technical_issue
+System error occurred,technical_issue
+App is crashing,technical_issue
+Facing technical problem,technical_issue
+Hello, greeting
+Hi there, greeting
+Good morning, greeting
+Hey, greeting
+Hi, greeting
+Thank you, thanks
+Thanks a lot, thanks
+Appreciate it, thanks
+Thank you so much, thanks
+Thanks, thanks
+Bye, goodbye
+See you later, goodbye
+Goodbye, goodbye
+Talk later, goodbye
+Bye bye, goodbye
+Need help changing my password,password_reset
+Forgot my account password,password_reset
+Please reset my password,password_reset
+I want to update my password,password_reset
+My login password expired,password_reset
+Unable to sign in due to password,password_reset
+Password reset link please,password_reset
+Can you help me recover password,password_reset
+Change my portal password,password_reset
+Where is my ticket now,ticket_status
+Any update on my support request,ticket_status
+Tell me my ticket progress,ticket_status
+Has my complaint been closed,ticket_status
+I want to know ticket resolution,ticket_status
+Can I see my open ticket,ticket_status
+Give me status of issue ticket,ticket_status
+Check if my case is solved,ticket_status
+Support case status please,ticket_status
+Need help installing VPN client,software_help
+Assist with software installation,software_help
+How can I set up VPN,software_help
+Please provide app install guide,software_help
+Help me install office software,software_help
+Steps to install company tools,software_help
+Can you walk me through setup,software_help
+Installation support for new software,software_help
+How to configure installed app,software_help
+Laptop keeps showing an error,technical_issue
+My screen freezes frequently,technical_issue
+Network drops every few minutes,technical_issue
+System is running very slow,technical_issue
+Cannot connect to company wifi,technical_issue
+Application not responding,technical_issue
+Getting blue screen on startup,technical_issue
+Printer is not working,technical_issue
+Email client keeps crashing,technical_issue
+Greetings, greeting
+Good afternoon, greeting
+Good evening, greeting
+Hi team, greeting
+Hello support, greeting
+Hey there, greeting
+Morning, greeting
+Nice to meet you, greeting
+Yo, greeting
+Many thanks, thanks
+Thank you for your help,thanks
+Thanks for the quick support,thanks
+I really appreciate your help,thanks
+That was helpful thanks,thanks
+Perfect thank you,thanks
+Great thanks for assisting,thanks
+Thanks team,thanks
+Much appreciated,thanks
+See you,goodbye
+Catch you later,goodbye
+Have a good day,goodbye
+I am done for now goodbye,goodbye
+Talk to you soon,goodbye
+Thanks bye,goodbye
+Signing off now,goodbye
+Good night goodbye,goodbye
+Take care bye,goodbye
