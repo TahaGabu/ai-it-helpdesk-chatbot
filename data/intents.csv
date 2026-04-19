@@ -1,11 +1,7 @@
 text,intent
 I forgot my password,password_reset
 How do I reset my password,password_reset
-Can't login to my account,password_reset
 forgot password,password_reset
-unable to login,password_reset
-login issue,password_reset
-can't access account,password_reset
 reset login credentials,password_reset
 Need help changing my password,password_reset
 Please reset my password,password_reset
@@ -13,20 +9,32 @@ locked out after too many attempts,password_reset
 password expired what do I do,password_reset
 SSO password reset please,password_reset
 recovery link for password not working,password_reset
+I need a new password,password_reset
+password reset email did not arrive,password_reset
+Can't login to my account,login_issue
+unable to login,login_issue
+login issue,login_issue
+can't access account,login_issue
+I am stuck on login screen,login_issue
+cannot login to system,login_issue
+login page not loading,login_issue
+unable to access dashboard,login_issue
+cannot access login page,login_issue
+login page not working,login_issue
+invalid username or password,login_issue
+SSO login failed,login_issue
+check my ticket,ticket_status
+what is my ticket status,ticket_status
+track my issue,ticket_status
+ticket update please,ticket_status
+is my issue resolved,ticket_status
+support ticket status,ticket_status
 Check my ticket status,ticket_status
-What is my ticket update,ticket_status
-Track my issue status,ticket_status
 where is my ticket now,ticket_status
 any update on my support request,ticket_status
 has my case been closed yet,ticket_status
-show me my open tickets,ticket_status
+open my support ticket,ticket_status
 ticket number status please,ticket_status
-still waiting on my helpdesk ticket,ticket_status
-when will my issue be resolved,ticket_status
-progress on my incident please,ticket_status
-was my ticket escalated,ticket_status
-any news on my open ticket,ticket_status
-update on my case number please,ticket_status
 Install VPN,software_help
 How to install software,software_help
 how do i install software,software_help
@@ -37,24 +45,20 @@ walk me through installing office,software_help
 where do I download approved software,software_help
 company portal app install help,software_help
 setup instructions for new software,software_help
-how do I configure the VPN after install,software_help
-can IT remote in to install this for me,software_help
-install says I need admin rights,software_help
-how do I update software already on my PC,software_help
-VPN not working,technical_issue
+how to upgrade software on my laptop,software_help
+help installing approved apps from portal,software_help
+system hanging,technical_issue
+software not opening,technical_issue
+error occurred,technical_issue
+application crashed,technical_issue
+system not working,technical_issue
+system not responding,technical_issue
 Internet not connecting,technical_issue
 wifi keeps dropping,technical_issue
 laptop is very slow today,technical_issue
 app crashes when I open it,technical_issue
-blue screen on startup,technical_issue
+VPN not working,technical_issue
 printer will not print,technical_issue
-cannot connect to VPN,technical_issue
-Outlook keeps freezing,technical_issue
-error code when I try to log in,technical_issue
-screen goes black randomly,technical_issue
-Teams mic not working in meetings,technical_issue
-monitor not detected on dock,technical_issue
-USB drive not showing in explorer,technical_issue
 Hello,greeting
 Hi there,greeting
 Good morning,greeting
@@ -65,35 +69,29 @@ morning everyone,greeting
 hello IT,greeting
 hey there,greeting
 nice to meet you,greeting
-yo quick question,greeting
-hi is anyone online,greeting
 good evening team,greeting
-hello I need assistance,greeting
+hi is anyone online,greeting
 Thank you,thanks
+Thanks,thanks
+Thanks!,thanks
 Thanks a lot,thanks
 Appreciate it,thanks
 many thanks for that,thanks
 thank you for your help,thanks
 thanks for the quick reply,thanks
-that solved it thanks,thanks
 really appreciate the support,thanks
 perfect thank you,thanks
-cheers for your help,thanks
 awesome that fixed it thanks,thanks
-thanks heaps really helpful,thanks
-much obliged for the support,thanks
-legend thanks for sorting that,thanks
+cheers for your help,thanks
 Bye,goodbye
 See you later,goodbye
 Goodbye,goodbye
 catch you later,goodbye
 have a good day,goodbye
 talk soon,goodbye
-signing off thanks,goodbye
-that's all from me bye,goodbye
-end chat for now,goodbye
 take care bye,goodbye
-okay bye for now,goodbye
-closing this chat thanks,goodbye
+end chat for now,goodbye
+signing off for now,goodbye
+that's all from me,goodbye
+closing this chat now,goodbye
 gotta run speak later,goodbye
-all set thanks bye,goodbye

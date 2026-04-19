@@ -1,0 +1,18 @@
+test_case_id,category,input,expected_behavior_summary,dataset_intent_expected,predicted_intent,actual_bot_output,result
+TC01,Basic functionality,Hello,Greeting response,greeting,greeting,Hello! How can I assist you today?,Pass
+TC02,Basic functionality,Hi there,Greeting response,greeting,greeting,Hello! How can I assist you today?,Pass
+TC03,Password reset,I forgot my password,Password reset steps,password_reset,password_reset,"To reset your password, go to settings > reset password and follow the steps.",Pass
+TC04,Password reset,Reset my login password,Password reset steps,password_reset,password_reset,"To reset your password, go to settings > reset password and follow the steps.",Pass
+TC05,Login issue,I am stuck on login screen,Login issue solution,login_issue,login_issue,"Please check your credentials or clear cache. If the issue persists, contact support.",Pass
+TC06,Login issue,Unable to login,Login issue solution,login_issue,login_issue,"Please check your credentials or clear cache. If the issue persists, contact support.",Pass
+TC07,Technical issue,System not responding,Technical issue solution,technical_issue,technical_issue,Try restarting system or checking internet. Contact support if needed.,Pass
+TC08,Technical issue,App is crashing,Technical issue solution,technical_issue,technical_issue,Try restarting system or checking internet. Contact support if needed.,Pass
+TC09,Software help,Install VPN,Installation guidance,software_help,software_help,Download from official website and follow installation steps.,Pass
+TC10,Software help,How to install software,Installation guidance,software_help,software_help,Download from official website and follow installation steps.,Pass
+TC11,Ticket status,Check my ticket status,Ticket response,ticket_status,ticket_status,Please provide your ticket ID. This is a demo system.,Pass
+TC12,Ticket status,Track my issue,Ticket response,ticket_status,ticket_status,Please provide your ticket ID. This is a demo system.,Pass
+TC13,Thanks & exit,Thanks,Thank you response,thanks,thanks,You're welcome! 😊,Pass
+TC14,Thanks & exit,Bye,Goodbye message,goodbye,goodbye,Goodbye! Have a great day!,Pass
+TC15,Edge case,asdfgh,Unknown / fallback response,,technical_issue,Try restarting system or checking internet. Contact support if needed.,Fail
+TC16,Edge case,12345,Unknown / fallback response,,technical_issue,Try restarting system or checking internet. Contact support if needed.,Fail
+TC17,Edge case,(empty input),Warning: please enter a message,,(not run),(no reply; empty input is skipped — see report notes),N/A

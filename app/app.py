@@ -10,6 +10,7 @@ model = joblib.load("model/chatbot_model.pkl")
 # Responses
 responses = {
     "password_reset": "To reset your password, go to settings > reset password and follow the steps.",
+    "login_issue": "Please check your credentials or clear cache. If the issue persists, contact support.",
     "ticket_status": "Please provide your ticket ID. This is a demo system.",
     "software_help": "Download from official website and follow installation steps.",
     "technical_issue": "Try restarting system or checking internet. Contact support if needed.",
@@ -33,19 +34,22 @@ for msg in st.session_state.messages:
 # Input
 user_input = st.chat_input("Type your message...")
 
-if user_input:
-    # Show user message
-    st.session_state.messages.append({"role": "user", "content": user_input})
-    with st.chat_message("user"):
-        st.markdown(user_input)
+if user_input is not None:
+    if user_input.strip() == "":
+        st.warning("Please enter a message.")
+    else:
+        # Show user message
+        st.session_state.messages.append({"role": "user", "content": user_input})
+        with st.chat_message("user"):
+            st.markdown(user_input)
 
-    # Predict intent
-    data = pd.Series([user_input])
-    prediction = model.predict(data)[0]
+        # Predict intent
+        data = pd.Series([user_input])
+        prediction = model.predict(data)[0]
 
-    bot_reply = responses.get(prediction, "Sorry, I didn't understand that.")
+        bot_reply = responses.get(prediction, "Sorry, I didn't understand that.")
 
-    # Show bot message
-    st.session_state.messages.append({"role": "assistant", "content": bot_reply})
-    with st.chat_message("assistant"):
-        st.markdown(bot_reply)
+        # Show bot message
+        st.session_state.messages.append({"role": "assistant", "content": bot_reply})
+        with st.chat_message("assistant"):
+            st.markdown(bot_reply)
