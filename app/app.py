@@ -43,11 +43,22 @@ if user_input is not None:
         with st.chat_message("user"):
             st.markdown(user_input)
 
-        # Predict intent
+        # Predict intent with confidence threshold for unknown queries
         data = pd.Series([user_input])
-        prediction = model.predict(data)[0]
+        fallback_reply = "Sorry, I didn't understand that."
 
-        bot_reply = responses.get(prediction, "Sorry, I didn't understand that.")
+        try:
+            probs = model.predict_proba(data)
+            confidence = max(probs[0])
+        except Exception:
+            # If probability output is unavailable, assume full confidence.
+            confidence = 1.0
+
+        if confidence < 0.3:
+            bot_reply = fallback_reply
+        else:
+            prediction = model.predict(data)[0]
+            bot_reply = responses.get(prediction, fallback_reply)
 
         # Show bot message
         st.session_state.messages.append({"role": "assistant", "content": bot_reply})
