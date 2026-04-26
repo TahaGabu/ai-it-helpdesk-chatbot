@@ -54,7 +54,7 @@ if user_input is not None:
             # If probability output is unavailable, assume full confidence.
             confidence = 1.0
 
-        if confidence < 0.3:
+        if confidence < 0.2:
             bot_reply = fallback_reply
         else:
             prediction = model.predict(data)[0]
